@@ -5,16 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signature Page</title>
   <link rel="stylesheet" href="typeSignatureStyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
   <script src="typeSignatureScript.js"></script>
 </head>
 <body>
   <h1>Type Your Signature</h1>
   <div class="signature-controls">
     <input type="text" id="signatureInput" placeholder="Type your signature here">
-    <button id="saveSignatureButton">Save Signature</button>
-    <button id="clearSignatureButton">Clear</button>
+    <h2>Font</h2>
+    <select id="fontSelector">
+      <!-- <option value="">Select Font</option> -->
+      <option value="Dancing Script">Dancing Script</option>
+      <option value="Great Vibes">Great Vibes</option>
+      <option value="Pacifico">Pacifico</option>
+    </select>
+    <h2>Color</h2>
+    <input type="color" id="colorPicker" value="#000000">
+    
   </div>
   <canvas id="signatureCanvas"></canvas>
-  
+  <div id="buttons">
+    <button id="saveSignatureButton" class="styleButtons">Save</button>
+    <button id="clearSignatureButton" class="styleButtons">Clear</button>
+  </div>
+
 </body>
 </html>

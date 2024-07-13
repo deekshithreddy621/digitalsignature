@@ -1,34 +1,57 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    justify-content: center;
-    background-color: #f0f0f0;
-  }
-  
-  .signature-controls {
-    margin-bottom: 20px;
-  }
-  
-  canvas {
-    border: 1px solid #000;
-    background-color: #fff;
-  }
-  
-  button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  input[type="text"] {
-    margin-left: 10px;
-    padding: 5px;
-    font-size: 16px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.signature-controls {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+canvas {
+  border: 1px solid #000;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 25px;
+}
+#signatureInput, #fontSelector{
+  width: 300px;
+  height: 50px;
+  margin-right: 20px;
+}
+#saveSignatureButton{
+  background-color: lightgreen;
+}
+.styleButtons {
+  font-size: x-large;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+}
+button, select, input[type="color"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
